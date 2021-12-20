@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from './components/Header';
 import Button from './components/Button'
 import LuckyNumbers from './components/LuckyNumbers';
+import Loading from './components/Loading'
+
+
 
 
 
@@ -9,8 +12,14 @@ function App() {
 
   const [isVisible, setIsVisible] = useState(true)
   const [numbers, setNumbers] = useState([])
+  const [loading, setLoading] = useState(false)
 
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 6000);
+  }, [loading]);
 
   const getRandomNumbers=()=>{
     const randomNumbers=[]
@@ -19,13 +28,15 @@ function App() {
     }
     randomNumbers.push(Math.ceil(Math.random()*10))
     setNumbers(randomNumbers)
+    setLoading(!loading)
   }
   
   const reset = () => {
     setIsVisible(!isVisible)
   }
 
-  return (
+  return loading ? (
+    <Loading/>):(
     <div className="App">
       <Header />
       <LuckyNumbers numbers={numbers} isVisible={isVisible} />

@@ -2,10 +2,7 @@ import React from 'react'
 import './Button.css'
 
 const Button = ({text, click}) => {
-    return (
-        <div className="buttons">
-            <button className="pulse" onClick={click}>{text}</button>
-        </div>
-    )
+    return <button className="pulse" onClick={click}>{text}</button>
+    
 }
 export default Button
