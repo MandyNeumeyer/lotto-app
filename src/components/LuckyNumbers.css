@@ -1,20 +1,32 @@
+
+
 .luckyNum{
-    display: flex;
-}
-
-span{
-    margin-right:1rem;
-    display: inline-block;
-    width:4rem;
-    height:4rem;
-    border:0.5rem solid purple;
-    border-radius: 50%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    font-size:2rem;
+    align-items: center; */
+    /* border:10px inset rgb(93, 39, 97); */
+    /* border:10px inset rgb(253, 165, 2); */
+    width:30rem;
+    height:6rem;
+    /* background-color: rgb(110, 62, 114); */
+    /* background-color: rgb(253, 165, 2); */
 }
 
+.lucky {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    background: radial-gradient(circle at 35% 30%, white 2%, #fbfb35 17%, #e3e012 40%, rgb(72, 71, 4) 100%);
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+    box-shadow: 7px 21px 15px -21px black;
+    margin: 7px
+}
 .lucky-6{
-    background-color: rgba(117, 82, 117, 0.582);
+    background: radial-gradient(circle at 35% 30%, white 2%, #da35fb 17%, #d103c0 40%, rgb(72, 71, 4) 100%);
 }

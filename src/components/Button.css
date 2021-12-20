@@ -1,0 +1,37 @@
+.buttons{
+    width:18rem;
+    display: flex;
+    justify-content: space-between;
+} 
+ 
+button {
+    color:#ef6eae;
+    transition: 0.25s;
+}
+
+button:hover, button:focus {
+    border-color: #ef8f6e;
+    color: #fff;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 #ef8f6e;
+    }
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}

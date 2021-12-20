@@ -1,0 +1,22 @@
+.heading{
+    display:flex;
+}
+
+
+h1{
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: wheat;
+    color:lightgray;
+    margin-left:1rem;
+    margin-top:-0.6rem;
+}
+
+.heading + p{
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+    color: rgb(252, 252, 180);
+    color:#ef8f6e;
+    color:rgb(187, 186, 186);
+    letter-spacing: 0.1rem;
+}
