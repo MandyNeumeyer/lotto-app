@@ -1,6 +1,9 @@
 .heading{
     display:flex;
 }
+.space{
+    word-spacing: 1rem;
+}
 
 
 h1{

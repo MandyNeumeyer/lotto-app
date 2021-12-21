@@ -15,13 +15,14 @@ function App() {
   const [loading, setLoading] = useState(false)
 
 
-  useEffect(() => {
+  useEffect(() => { 
     setTimeout(() => {
       setLoading(false);
     }, 6000);
   }, [loading]);
 
-  const getRandomNumbers=()=>{
+  const getRandomNumbers = () => {
+    if(numbers.length>0)return
     const randomNumbers=[]
     for (let i = 0; i < 6; i++){
       randomNumbers.push(Math.ceil(Math.random() * 49) + " ");     
@@ -38,11 +39,15 @@ function App() {
   return loading ? (
     <Loading/>):(
     <div className="App">
-      <Header />
-      <LuckyNumbers numbers={numbers} isVisible={isVisible} />
-      <div className="btn">
-      <Button click={reset} text="Reset" />
-      <Button click={getRandomNumbers} text="Show me the lucky numbers" />
+      <Header numbers={numbers}/>
+        <LuckyNumbers numbers={numbers} isVisible={isVisible} />
+        <div className="btn">
+          <div style={{display: `${numbers.length > 0 ? 'block' : 'none'}` }}>
+            <Button click={reset} text={isVisible?'keep secret':'show secret'} />
+          </div>
+          <div style={{display: `${numbers.length > 0 ? 'none' : 'block'}` }}>
+            <Button click={getRandomNumbers} text="Show me the lucky numbers"/>
+          </div>
       </div>
     </div>
   );
