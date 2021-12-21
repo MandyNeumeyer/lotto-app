@@ -4,7 +4,7 @@ button {
     transition: 0.25s;
 }
 
-button:hover, button:focus {
+button:hover {
     border-color: #ef8f6e;
     color: #fff;
 }
@@ -12,7 +12,6 @@ button:hover, button:focus {
 button {
     background: none;
     border: 2px solid;
-    /* font: inherit; */
     font-size: 0.9rem;
     line-height: 1;
     margin: 0.5em;
@@ -25,8 +24,7 @@ button {
     }
 }
 
-.pulse:hover,
-.pulse:focus {
+.pulse:hover {
   -webkit-animation: pulse 1s;
           animation: pulse 1s;
   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);

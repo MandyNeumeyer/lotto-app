@@ -1,6 +1,6 @@
 import React from 'react';
-import FortuneTeller from './fortune-teller.gif'
-import GoldenFrame from './goldenFrame.png'
+import FortuneTeller from './img/fortune-teller.gif'
+import GoldenFrame from './img/goldenFrame.png'
 import './Loading.css'
 
 const Loading = () => {

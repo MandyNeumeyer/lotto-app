@@ -1,10 +1,6 @@
 .heading{
     display:flex;
 }
-.space{
-    word-spacing: 1rem;
-}
-
 
 h1{
     font-weight: 900;
