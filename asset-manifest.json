@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lotto-app/static/css/main.516f86a0.chunk.css",
+    "main.js": "/lotto-app/static/js/main.d85212b8.chunk.js",
+    "main.js.map": "/lotto-app/static/js/main.d85212b8.chunk.js.map",
+    "runtime-main.js": "/lotto-app/static/js/runtime-main.254a303c.js",
+    "runtime-main.js.map": "/lotto-app/static/js/runtime-main.254a303c.js.map",
+    "static/js/2.168c57f7.chunk.js": "/lotto-app/static/js/2.168c57f7.chunk.js",
+    "static/js/2.168c57f7.chunk.js.map": "/lotto-app/static/js/2.168c57f7.chunk.js.map",
+    "index.html": "/lotto-app/index.html",
+    "static/css/main.516f86a0.chunk.css.map": "/lotto-app/static/css/main.516f86a0.chunk.css.map",
+    "static/js/2.168c57f7.chunk.js.LICENSE.txt": "/lotto-app/static/js/2.168c57f7.chunk.js.LICENSE.txt",
+    "static/media/fortune-teller.e618e6d4.gif": "/lotto-app/static/media/fortune-teller.e618e6d4.gif",
+    "static/media/goldenFrame.d175404a.png": "/lotto-app/static/media/goldenFrame.d175404a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.254a303c.js",
+    "static/js/2.168c57f7.chunk.js",
+    "static/css/main.516f86a0.chunk.css",
+    "static/js/main.d85212b8.chunk.js"
+  ]
+}
