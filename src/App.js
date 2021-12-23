@@ -3,8 +3,7 @@ import Header from './components/Header';
 import Button from './components/Button'
 import LuckyNumbers from './components/LuckyNumbers';
 import Loading from './components/Loading'
-
-
+import sound from './components/img-sounds/mystic.mp3'
 
 
 
@@ -15,13 +14,20 @@ function App() {
   const [loading, setLoading] = useState(false)
 
 
-  useEffect(() => { 
+  useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 12000);
   }, [loading]);
 
+
+
+
+
+
   const getRandomNumbers = () => {
+    const audio = new Audio(sound)
+    audio.play()
     if(numbers.length>0)return
     const randomNumbers=[]
     for (let i = 0; i < 6; i++){
