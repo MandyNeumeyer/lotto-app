@@ -23,8 +23,8 @@ function App() {
 
 
   const getRandomNumbers = () => {
-    const audio = new Audio(sound)
-    audio.play()
+      const audio = new Audio(sound)
+      audio.play()
     if(numbers.length>0)return
     const randomNumbers=[]
     for (let i = 0; i < 6; i++){
