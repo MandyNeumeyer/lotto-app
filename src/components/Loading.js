@@ -12,12 +12,12 @@ const Loading = () => {
     setImgLoaded(true)
   }
 
-
-  return (
-    <div className="Loading" style={{display: imgLoaded? 'block':'none'}}>
-      <img className="fortuneTeller" src={FortuneTeller} alt="fortune-teller" />
-      <img className="GoldenFrame" src={GoldenFrame} alt="golden-frame" onLoad={loadingDone} />
-    </div>
+  
+  return(
+   <div className="Loading" style={{opacity: imgLoaded? '1':'0', transition: '10s', transitionDelay:"1s"}}>
+    <img className="fortuneTeller" src={FortuneTeller} alt="fortune-teller" />
+    <img className="GoldenFrame" src={GoldenFrame} alt="golden-frame" onLoad={loadingDone} />
+  </div>
   );
 };
 
