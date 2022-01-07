@@ -4,6 +4,8 @@ import Button from './components/Button'
 import LuckyNumbers from './components/LuckyNumbers';
 import Loading from './components/Loading'
 import sound from './components/img-sounds/mystic.mp3'
+import FortuneTeller from './components/img-sounds/fortune-teller.gif'
+import GoldenFrame from './components/img-sounds/goldenFrame.png'
 
 
 
@@ -43,7 +45,7 @@ function App() {
   }
 
   return loading ? (
-    <Loading/>):(
+    <Loading fortuneTeller={FortuneTeller} goldenFrame={GoldenFrame} />):(
     <div className="App">
       <Header numbers={numbers}/>
         <LuckyNumbers numbers={numbers} isVisible={isVisible} />

@@ -1,13 +1,18 @@
-import React from 'react';
-import FortuneTeller from './img-sounds/fortune-teller.gif'
-import GoldenFrame from './img-sounds/goldenFrame.png'
+import React, {useState, useEffect} from 'react';
 import './Loading.css'
 
-const Loading = () => {
+
+const Loading = ({fortuneTeller, goldenFrame}) => {
+  const [imgLoaded, setImgLoaded] = useState(false)
+  
+  useEffect(() => {
+    setImgLoaded(true)
+  }, [fortuneTeller, goldenFrame]);
+
   return (
-    <div className="Loading">
-      <img className="fortuneTeller" src={FortuneTeller} alt="fortune-teller" />
-      <img className="GoldenFrame" src={GoldenFrame} alt="golden-frame" />
+    <div className="Loading" style={{display: imgLoaded?'block': 'none'}}>
+      <img className="fortuneTeller" src={fortuneTeller} alt="fortune-teller" />
+      <img className="GoldenFrame" src={goldenFrame} alt="golden-frame" />
     </div>
   );
 };
