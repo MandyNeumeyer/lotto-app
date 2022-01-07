@@ -5,14 +5,15 @@ import './Loading.css'
 const Loading = ({fortuneTeller, goldenFrame}) => {
   const [imgLoaded, setImgLoaded] = useState(false)
   
-  useEffect(() => {
+  const loadingDone = () => {
     setImgLoaded(true)
-  }, [fortuneTeller, goldenFrame]);
+  }
+
 
   return (
-    <div className="Loading" style={{display: imgLoaded?'block': 'none'}}>
+    <div className="Loading" style={{display: imgLoaded? 'block':'none'}}>
       <img className="fortuneTeller" src={fortuneTeller} alt="fortune-teller" />
-      <img className="GoldenFrame" src={goldenFrame} alt="golden-frame" />
+      <img className="GoldenFrame" src={goldenFrame} alt="golden-frame" onLoad={loadingDone} />
     </div>
   );
 };
