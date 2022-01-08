@@ -14,7 +14,7 @@ const Loading = () => {
 
   
   return(
-   <div className="Loading" style={{opacity: imgLoaded? '1':'0', transition: '10s', transitionDelay:"1s"}}>
+   <div className="Loading" style={{opacity: imgLoaded? '1':'0', transition: '12s'}}>
     <img className="fortuneTeller" src={FortuneTeller} alt="fortune-teller" />
     <img className="GoldenFrame" src={GoldenFrame} alt="golden-frame" onLoad={loadingDone} />
   </div>
