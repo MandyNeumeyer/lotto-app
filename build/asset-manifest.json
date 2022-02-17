@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lotto-app/static/css/main.9903747c.css",
+    "main.js": "/lotto-app/static/js/main.9752aa46.js",
+    "static/media/goldenFrame.png": "/lotto-app/static/media/goldenFrame.d175404a0e754ce526b3.png",
+    "static/media/mystic.mp3": "/lotto-app/static/media/mystic.e9a4faf7cefb117a0572.mp3",
+    "static/media/fortune-teller.gif": "/lotto-app/static/media/fortune-teller.e618e6d4647bf1650b78.gif",
+    "index.html": "/lotto-app/index.html",
+    "main.9903747c.css.map": "/lotto-app/static/css/main.9903747c.css.map",
+    "main.9752aa46.js.map": "/lotto-app/static/js/main.9752aa46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9903747c.css",
+    "static/js/main.9752aa46.js"
+  ]
+}
